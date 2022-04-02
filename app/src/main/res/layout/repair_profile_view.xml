@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="견적요청서 제목"
+        android:layout_marginLeft="5dp"
+        android:textSize="21dp"
+        android:fontFamily="@font/notosanscjkkrregular"
+        android:letterSpacing="-0.06"
+        android:includeFontPadding="false"/>
+
+    <ImageView
+        android:background="@mipmap/btn_into"
+        android:id="@+id/profile_Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/textChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="고장난 장치"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/textTitle"
+        android:textSize="15.8dp"
+        android:fontFamily="@font/notosanscjkkrregular"
+        android:includeFontPadding="false"
+        android:letterSpacing="-0.05"
+        android:layout_marginTop="3dp"/>
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019.10.24"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20.4dp"
+        android:layout_below="@id/textChoice"
+        android:textSize="14dp"
+        android:fontFamily="@font/notosanscjkkrbold"
+        android:letterSpacing="-0.02"
+        android:includeFontPadding="false"
+        />
+
+    <TextView
+        android:id="@+id/textState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수리점 확인중"
+        android:textSize="17dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@+id/textTime"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/notosanscjkkrmedium"
+        android:letterSpacing="-0.05"
+        />
+
+    <!--
+
+    <TextView
+        android:id="@+id/textGun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@+id/textTime"
+        android:text="건"
+        android:textSize="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/textCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="30dp"
+        android:layout_toLeftOf="@id/textGun"
+        android:layout_below="@id/textClass"
+        android:layout_alignBaseline="@id/textTime"
+        android:layout_marginRight="10dp"
+        />
+
+
+    -->
+
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/itemMyInfo"
+            android:title="     내 정보" />
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/itemFindRepairShop"
+            android:title="     수리점 조회"
+            />
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/itemRepairCase"
+            android:title="     수리사례"
+            />
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/itemWantPartner"
+            android:title="     나의 수리 현황"
+            />
+        <item
+            android:id="@+id/itemCustomerCenter"
+            android:title="     고객센터" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/itemLogout"
+            android:title="     로그아웃" />
+    </group>
+
+</menu>

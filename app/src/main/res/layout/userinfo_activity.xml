@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/notosanscjkkrbold"
+        android:gravity="center_horizontal|top"
+        android:letterSpacing="0.02"
+        android:lineSpacingExtra="2sp"
+        android:text="사용자 정보"
+        android:textColor="#ffffffff"
+        android:textSize="15.8sp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="14.7dp"
+        android:layout_height="14.7dp"
+        android:src="@mipmap/btn_back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16.7dp"
+        android:layout_marginTop="26dp"/>
+
+    <TextView
+        android:id="@+id/textChangePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16.7dp"
+        android:layout_marginTop="21dp"
+        android:text="비밀번호 변경"
+        android:textColor="#ffffffff"
+        android:fontFamily="@font/notosanscjkkrlight"
+        android:includeFontPadding="false"
+        android:textSize="14sp"
+        android:letterSpacing="0.02"
+        android:lineSpacingExtra="2sp"
+        />
+
+
+
+
+    <TextView
+        android:text="아이디"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewID"
+        android:layout_below="@id/text_title"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/notosanscjkkrregular"
+        android:letterSpacing="0.08"
+        android:lineSpacingExtra="4sp"
+        android:textColor="#99ffffff"
+        android:textSize="14sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10.3dp"
+        android:includeFontPadding="false"
+        />
+
+    <TextView
+        android:layout_below="@id/textViewID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="현재 아이디"
+        android:id="@+id/textEmail"
+        android:fontFamily="@font/notosanscjkkrlight"
+        android:letterSpacing="0.08"
+        android:lineSpacingExtra="6sp"
+        android:gravity="start|top"
+        android:textColor="#ffffffff"
+        android:textSize="14sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10.3dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_below="@id/textEmail"
+        android:text="닉네임"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewNicName"
+        android:fontFamily="@font/notosanscjkkrregular"
+        android:letterSpacing="0.08"
+        android:lineSpacingExtra="4sp"
+        android:textColor="#99ffffff"
+        android:textSize="14sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10.3dp"
+        android:includeFontPadding="false"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_below="@id/textViewNicName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="현재 닉네임"
+        android:id="@+id/textNicName"
+        android:fontFamily="@font/notosanscjkkrlight"
+        android:letterSpacing="0.08"
+        android:lineSpacingExtra="6sp"
+        android:gravity="start|top"
+        android:textColor="#ffffffff"
+        android:textSize="14sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10.3dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_below="@+id/textNicName"
+        android:text="전화번호"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTel"
+        android:fontFamily="@font/notosanscjkkrregular"
+        android:letterSpacing="0.08"
+        android:lineSpacingExtra="4sp"
+        android:textColor="#99ffffff"
+        android:textSize="14sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10.3dp"
+        android:includeFontPadding="false"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_below="@id/textViewTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="현재 전화번호"
+        android:id="@+id/textTel"
+        android:fontFamily="@font/notosanscjkkrlight"
+        android:letterSpacing="0.08"
+        android:lineSpacingExtra="6sp"
+        android:gravity="start|top"
+        android:textColor="#ffffffff"
+        android:textSize="14sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10.3dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/textVIewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이름"
+        android:layout_below="@id/textTel"
+        android:fontFamily="@font/notosanscjkkrregular"
+        android:letterSpacing="0.08"
+        android:lineSpacingExtra="4sp"
+        android:textColor="#99ffffff"
+        android:textSize="14sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10.3dp"
+        android:includeFontPadding="false"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="현재 이름"
+        android:layout_below="@id/textVIewName"
+        android:fontFamily="@font/notosanscjkkrlight"
+        android:letterSpacing="0.08"
+        android:lineSpacingExtra="6sp"
+        android:gravity="start|top"
+        android:textColor="#ffffffff"
+        android:textSize="14sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10.3dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/textViewUserUID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="유저 UID"
+        android:layout_below="@id/textName"
+        android:fontFamily="@font/notosanscjkkrregular"
+        android:letterSpacing="0.08"
+        android:lineSpacingExtra="4sp"
+        android:textColor="#99ffffff"
+        android:textSize="14sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10.3dp"
+        android:includeFontPadding="false"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/textUserUID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="현재UID"
+        android:layout_below="@id/textViewUserUID"
+        android:fontFamily="@font/notosanscjkkrlight"
+        android:letterSpacing="0.08"
+        android:lineSpacingExtra="6sp"
+        android:gravity="start|top"
+        android:textColor="#ffffffff"
+        android:textSize="14sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10.3dp"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>

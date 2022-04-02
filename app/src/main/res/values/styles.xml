@@ -1,0 +1,59 @@
+<resources>
+
+    <style name="Loding" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@drawable/intro</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#E4E4E4</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#000000</item>
+        <item name="android:statusBarColor">#E9E7E7</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="TabTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#ffffff</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:textColorSecondary">#000000</item>
+        <item name="colorAccent">#000000</item>
+    </style>
+
+
+    <style name="LoginTheme" parent="Widget.AppCompat.EditText">
+        <item name="android:colorButtonNormal">#ffffff</item>
+        <item name="android:colorControlActivated">#FFC107</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorHint">#ffffff</item>
+    </style>
+
+    <style name="RatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="android:color">#FFEB3B</item>
+        <item name="android:colorAccent">#FFEB3B</item>
+        <item name="android:colorPrimary">#FFEB3B</item>
+        <item name="android:ratingBarStyleIndicator">@style/Widget.AppCompat.RatingBar.Indicator</item>
+    </style>
+
+    <style name="CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:colorControlNormal">#f0f0f0</item>
+        <item name="android:colorControlActivated">#FFEB3B</item>
+        <item name="android:colorAccent">#FFEB3B</item>
+        <item name="android:colorPrimary">#FFFFFF</item>
+    </style>
+
+    <style name="EditLine" parent="Widget.AppCompat.EditText">
+        <item name="android:colorButtonNormal">#000000</item>
+        <item name="android:colorControlActivated">#000000</item>
+        <item name="android:colorControlNormal">#000000</item>
+    </style>
+
+
+</resources>

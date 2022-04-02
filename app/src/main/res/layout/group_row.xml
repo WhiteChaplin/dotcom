@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/groupIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_check"
+        android:layout_marginTop="2dp"/>
+    <TextView
+        android:id="@+id/groupName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:paddingLeft="5px"
+        android:fontFamily="@font/notosanscjkkrregular"
+        android:letterSpacing="0.02"
+        android:includeFontPadding="false"
+        android:text="가나다라"
+        android:layout_toRightOf="@id/groupIcon"
+        android:layout_centerHorizontal="true"
+        android:gravity="center|left"
+        android:layout_marginLeft="5dp"/>
+
+</LinearLayout>

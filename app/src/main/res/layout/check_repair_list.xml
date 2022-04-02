@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosanscjkkrbold"
+            android:letterSpacing="0.02"
+            android:text="견적서"
+            android:gravity="center_horizontal|top"
+            android:textColor="#ffffffff"
+            android:textSize="15.8sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="13.8dp"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="14.7dp"
+            android:layout_height="14.7dp"
+            android:src="@mipmap/btn_back"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16.7dp"
+            android:layout_marginTop="26dp"/>
+
+        <TextView
+            android:id="@+id/EstimateNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="10dp"
+            android:text="견적서 번호"
+            android:layout_below="@id/text_title"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.08"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:includeFontPadding="false"
+            />
+
+        <TextView
+            android:id="@+id/textEstimateNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_alignBaseline="@id/EstimateNum"
+            android:text="123"
+            android:textSize="13sp"
+            android:layout_below="@id/text_title"
+            android:fontFamily="@font/notosanscjkkrlight"
+            android:letterSpacing="0.08"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#99ffffff"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:id="@+id/textRequestEstimate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textEstimateNum"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="20dp"
+            android:text="사용자가 보낸 요청서"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.08"
+            android:textColor="#ffffffff"
+            android:textSize="17sp"
+            android:includeFontPadding="false" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/textRequestEstimate"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp" />
+
+
+        <TextView
+            android:id="@+id/UserUID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_marginStart="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="8dp"
+            android:text="유저아이디"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.08"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:includeFontPadding="false" />
+
+
+        <TextView
+            android:id="@+id/textUserUID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/UserUID"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp"
+            android:text="유저아이디"
+            android:textSize="13sp"
+            android:fontFamily="@font/notosanscjkkrlight"
+            android:letterSpacing="0.08"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#99ffffff"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/ExplainText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textUserUID"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:text="증상설명"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.08"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/textExplainText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ExplainText"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp"
+            android:text="증상설명"
+            android:textSize="13sp"
+            android:fontFamily="@font/notosanscjkkrlight"
+            android:letterSpacing="0.08"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#99ffffff"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/SeparateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textExplainText"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:text="분류"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.08"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/textSeparateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SeparateText"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp"
+            android:text="분류"
+            android:textSize="13sp"
+            android:fontFamily="@font/notosanscjkkrlight"
+            android:letterSpacing="0.08"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#99ffffff"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/SelfRepairText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textSeparateText"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:text="자가진단"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.08"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/textSelfRepairText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SelfRepairText"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp"
+            android:text="자가진단"
+            android:textSize="13sp"
+            android:fontFamily="@font/notosanscjkkrlight"
+            android:letterSpacing="0.08"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#99ffffff"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/LocationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textSelfRepairText"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:text="수리점위치"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.08"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/textLocationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LocationText"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp"
+            android:text="수리점위치"
+            android:textSize="13sp"
+            android:fontFamily="@font/notosanscjkkrlight"
+            android:letterSpacing="0.08"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#99ffffff"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/MoreOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textLocationText"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:text="추가옵션"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.08"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/textMoreOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/MoreOption"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp"
+            android:text="추가옵션"
+            android:textSize="13sp"
+            android:fontFamily="@font/notosanscjkkrlight"
+            android:letterSpacing="0.08"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#99ffffff"
+            android:includeFontPadding="false" />
+
+        <EditText
+            style="@style/EditLine"
+            android:theme="@style/EditLine"
+            android:id="@+id/textLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="6sp"
+            android:textColorHint="#ffffff"
+            android:gravity="start|top"
+            android:textColor="#ffffffff"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="-10dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:longClickable="false"
+            android:layout_below="@id/textMoreOption"
+            />
+
+        <TextView
+            android:id="@+id/textRepairShopSendEstimate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textLine"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            android:text="수리점이 보낸 의견서"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.08"
+            android:textColor="#ffffffff"
+            android:textSize="17sp"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/textViewForecastWrong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textRepairShopSendEstimate"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            android:text="예상 증상"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.08"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/textForecastWrong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewForecastWrong"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="6dp"
+            android:hint="어떠한게 예상이 갑니다"
+            android:textSize="13sp"
+            android:fontFamily="@font/notosanscjkkrlight"
+            android:letterSpacing="0.08"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#99ffffff"
+            android:includeFontPadding="false" />
+
+
+        <TextView
+            android:id="@+id/textViewRepairWay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textForecastWrong"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="20dp"
+            android:text="수리 방안 내용"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.08"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/textRepairWay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewRepairWay"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="6dp"
+            android:hint="이러이러하게 수리 할 예정입니다."
+            android:textSize="13sp"
+            android:fontFamily="@font/notosanscjkkrlight"
+            android:letterSpacing="0.08"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#99ffffff"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/textViewRepairDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textRepairWay"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="20dp"
+            android:text="수리에 대한 구체적인 비용"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.08"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/textRepairDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewRepairDetail"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="6dp"
+            android:hint="이렇이렇게 가격이 소요될 예정입니다"
+            android:textSize="13sp"
+            android:fontFamily="@font/notosanscjkkrlight"
+            android:letterSpacing="0.08"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#99ffffff"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/textViewRepairTakeTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textRepairDetail"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="20dp"
+            android:text="예상 수리 기간"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.08"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/editRepairTakeTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textRepairDetail"
+            android:layout_marginLeft="132dp"
+            android:layout_alignBaseline="@id/textViewRepairTakeTime"
+            android:text="3일"
+            android:textSize="13sp"
+            android:fontFamily="@font/notosanscjkkrlight"
+            android:letterSpacing="0.08"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#99ffffff"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/textViewPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewRepairTakeTime"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="20dp"
+            android:text="예상 금액"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.08"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/editPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editRepairTakeTime"
+            android:layout_marginLeft="132dp"
+            android:layout_alignBaseline="@id/textViewPay"
+            android:text="40000원"
+            android:textSize="13sp"
+            android:fontFamily="@font/notosanscjkkrlight"
+            android:letterSpacing="0.08"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#99ffffff"
+            android:includeFontPadding="false" />
+
+
+        <TextView
+            android:id="@+id/textState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="현재 상태"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.08"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:includeFontPadding="false"
+            android:layout_below="@id/editPay"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/textViewState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수리 진행중"
+            android:textSize="13sp"
+            android:fontFamily="@font/notosanscjkkrlight"
+            android:letterSpacing="0.08"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#99ffffff"
+            android:includeFontPadding="false"
+            android:layout_below="@id/editPay"
+            android:layout_alignBaseline="@id/textState"
+            android:layout_marginLeft="130dp"/>
+
+        <Button
+            android:id="@+id/btnComplete"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="수리완료시 클릭"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.08"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:includeFontPadding="false"
+            android:layout_below="@id/editPay"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="#FFC107"/>
+
+    </RelativeLayout>
+
+</ScrollView>

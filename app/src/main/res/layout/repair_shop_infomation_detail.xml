@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants">
+
+        <ImageView
+            android:id="@+id/imgview_shoppicture"
+            android:layout_width="130.5dp"
+            android:layout_height="130.8dp"
+            android:src="@mipmap/imgview_shoppicture"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:id="@+id/imgview_bgrpicture"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@mipmap/imgview_bgrpicture">
+            <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="22.0dp"
+                android:layout_height="22.0dp"
+                android:src="@mipmap/btn_close"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="15.3dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgview_shoppicture"
+            android:layout_marginTop="11dp">
+
+            <TextView
+                android:id="@+id/textShopName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkrbold"
+                android:includeFontPadding="false"
+                android:text="수리점이름"
+                android:gravity="center_horizontal|top"
+                android:textColor="#ff32394a"
+                android:textSize="19.8sp"
+                android:layout_marginTop="2dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/textShopLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanscjkkrregular"
+                android:letterSpacing="0.02"
+                android:includeFontPadding="false"
+                android:text="수리점주소"
+                android:gravity="center_horizontal|top"
+                android:textColor="#ffa2a2a2"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/textShopName"
+                android:layout_centerHorizontal="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linear10"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/textShopLocation">
+
+                <TextView
+                    android:id="@+id/textRepairCount"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanscjkkrregular"
+                    android:letterSpacing="0.08"
+                    android:includeFontPadding="false"
+                    android:text="수리완료"
+                    android:gravity="center"
+                    android:textColor="#ffa2a2a2"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/textCustomerRepute"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanscjkkrregular"
+                    android:letterSpacing="0.08"
+                    android:includeFontPadding="false"
+                    android:text="고객만족도"
+                    android:gravity="center"
+                    android:textColor="#ffa2a2a2"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/textCustomerReview"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanscjkkrregular"
+                    android:letterSpacing="0.08"
+                    android:includeFontPadding="false"
+                    android:text="후기"
+                    android:gravity="center"
+                    android:textColor="#ffa2a2a2"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linear20"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/linear10">
+
+                <TextView
+                    android:id="@+id/textCount"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanscjkkrbold"
+                    android:includeFontPadding="false"
+                    android:text="98건"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="#ff3a3b3e"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textRepute"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanscjkkrbold"
+                    android:includeFontPadding="false"
+                    android:text="0점"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="#ff3a3b3e"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textReview"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanscjkkrbold"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="53개"
+                    android:textColor="#ff3a3b3e"
+                    android:textSize="15.8sp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/TabTheme"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/relative">
+
+        </android.support.design.widget.TabLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tabLayout"
+            android:fillViewport="true"
+            android:id="@+id/scrollViewpager"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:isScrollContainer="true"
+                >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                </android.support.v4.view.ViewPager>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textShopIntroduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="수리점 소개수리점 소개v수리점 소수리점 소개수리점수리점
+                    소개수리점 소개수리점 소개수리점 소개수리점 소개수리점
+                    소개수리점 소개수리점 소개수리점 소개수리점 소개수리점
+                    소개수리점 소개수리점 소개수리점 소개 소개수리점 소개수리점 소개
+                    개수리점 소개개수리점 소개개수리점 소개개수리점 소개개수리점 소개
+                    개수리점 소개개수리점 소개개수리점 소개개수리점 소개개수리점 소개개수리점 소개"
+            android:textSize="17dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.02"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:id="@+id/textShopService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textShopIntroduce"
+            android:text="수리점 가능 서비스"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="24dp"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.02"
+            android:includeFontPadding="false"/>
+
+        <ImageView
+            android:id="@+id/shopService1"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:background="@drawable/shop_service_2"
+            android:layout_below="@id/textShopService"
+            android:layout_marginLeft="8dp"/>
+
+        <ImageView
+            android:id="@+id/shopService4"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:background="@drawable/shop_service_4"
+            android:layout_below="@id/textShopService"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/shopService1"/>
+
+        <ImageView
+            android:id="@+id/shopService5"
+            android:layout_width="105dp"
+            android:layout_height="30dp"
+            android:background="@drawable/shop_service_5"
+            android:layout_below="@id/textShopService"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/shopService4"/>
+
+        <ImageView
+            android:id="@+id/shopService2"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:background="@drawable/shop_service_1"
+            android:layout_below="@id/shopService1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:id="@+id/shopService6"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:background="@drawable/shop_service_6"
+            android:layout_below="@id/shopService1"
+            android:layout_toRightOf="@id/shopService2"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textShopTime"
+            android:text="영업시간"
+            android:textSize="24dp"
+            android:layout_below="@id/shopService2"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.02"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textWeekday"
+            android:text="평일"
+            android:textSize="17dp"
+            android:layout_below="@id/textShopTime"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.02"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textWeekdayTime"
+            android:text=" 9:00~18:00"
+            android:textSize="17dp"
+            android:layout_toRightOf="@id/textWeekday"
+            android:layout_below="@id/textShopTime"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.02"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textSaturday"
+            android:text="토요일"
+            android:textSize="17dp"
+            android:layout_below="@id/textWeekday"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.02"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textSaturdayTime"
+            android:text=" 9:00~18:00"
+            android:textSize="17dp"
+            android:layout_toRightOf="@id/textSaturday"
+            android:layout_below="@id/textWeekdayTime"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.02"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textSunday"
+            android:text="일요일 및 공휴일"
+            android:textSize="17dp"
+            android:layout_below="@id/textSaturday"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.02"
+            android:includeFontPadding="false"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textSundayTime"
+            android:text=" 9:00~18:00"
+            android:textSize="17dp"
+            android:layout_toRightOf="@id/textSunday"
+            android:layout_below="@id/textSaturdayTime"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.02"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:id="@+id/textViewTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="연락처"
+            android:textSize="24dp"
+            android:layout_below="@id/textSunday"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.02"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:id="@+id/textViewKakaoTalk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카카오톡 : "
+            android:textSize="20dp"
+            android:layout_below="@id/textViewTel"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.02"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:id="@+id/textKakaoTalk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카카오톡 아이디"
+            android:textSize="17dp"
+            android:layout_below="@id/textViewTel"
+            android:layout_toRightOf="@id/textViewKakaoTalk"
+            android:layout_alignBaseline="@id/textViewKakaoTalk"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.02"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:id="@+id/textViewPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tel : "
+            android:textSize="20dp"
+            android:layout_below="@id/textKakaoTalk"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.02"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:id="@+id/textPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="010-0000-0000"
+            android:textSize="17dp"
+            android:layout_below="@id/textKakaoTalk"
+            android:layout_toRightOf="@id/textViewPhoneNumber"
+            android:layout_alignBaseline="@id/textViewPhoneNumber"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.02"
+            android:includeFontPadding="false"/>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

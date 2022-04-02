@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사용자 이름"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/notosanscjkkrregular"
+        android:letterSpacing="0.02"
+        android:includeFontPadding="false"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:numStars="5"
+        android:rating="3"
+        android:stepSize="0.5"
+        android:max="5"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제목"
+        android:textSize="17dp"
+        android:layout_below="@id/textName"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/notosanscjkkrregular"
+        android:letterSpacing="0.02"
+        android:includeFontPadding="false"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/textRepute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수리점 후기"
+        android:textSize="19dp"
+        android:layout_below="@id/textTitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/notosanscjkkrlight"
+        android:letterSpacing="0.02"
+        android:includeFontPadding="false"/>
+
+</RelativeLayout>

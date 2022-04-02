@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/background">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/notosanscjkkrbold"
+            android:gravity="center_horizontal|top"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="2sp"
+            android:text="견적요청서"
+            android:textColor="#ffffffff"
+            android:textSize="15.8sp"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="14.7dp"
+            android:layout_height="14.7dp"
+            android:src="@mipmap/btn_back"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16.7dp"
+            android:layout_marginTop="26dp"/>
+
+
+        <ImageView
+            android:id="@+id/imgview_emptyimage"
+            android:layout_width="match_parent"
+            android:layout_height="211.0dp"
+            android:layout_below="@+id/text_title"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/imgview_emptyimage" />
+
+        <EditText
+            android:id="@+id/edtext_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgview_emptyimage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/notosanscjkkrbold"
+            android:gravity="center"
+            android:hint="제목을 입력해주세요"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffffff"
+            android:textSize="18dp"
+            android:layout_marginLeft="30.3dp"
+            android:layout_marginRight="30.3dp"/>
+        <TextView
+            android:id="@+id/text_selectdevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="고장난 장치를 선택해주세요"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.08"
+            android:lineSpacingExtra="6sp"
+            android:gravity="start|top"
+            android:textColor="#ffffc000"
+            android:textSize="15dp"
+            android:layout_below="@id/edtext_title"
+            android:layout_marginTop="0.3dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/separateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.08"
+            android:lineSpacingExtra="4sp"
+            android:text="어떤 자가진단 방법을 이용했나요?(선택)"
+            android:gravity="start|top"
+            android:textColor="#99ffffff"
+            android:textSize="13dp"
+            android:layout_below="@id/text_selectdevice"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20.5dp"/>
+
+        <TextView
+            android:id="@+id/choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosanscjkkrlight"
+            android:letterSpacing="0.08"
+            android:lineSpacingExtra="6sp"
+            android:hint="탭하여 선택해주세요"
+            android:textColorHint="#ffffff"
+            android:gravity="start|top"
+            android:textColor="#ffffffff"
+            android:textSize="13dp"
+            android:layout_below="@id/separateText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="9.8dp"/>
+
+        <TextView
+            android:id="@+id/explainText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.08"
+            android:lineSpacingExtra="4sp"
+            android:text="*증상 상세설명"
+            android:gravity="start|top"
+            android:textColor="#99ffffff"
+            android:textSize="13dp"
+            android:layout_below="@id/choice"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20.5dp"/>
+
+
+        <EditText
+            android:id="@+id/explainTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosanscjkkrlight"
+            android:letterSpacing="0.08"
+            android:lineSpacingExtra="6sp"
+            android:hint="증상을 적어주세요!"
+            android:textColorHint="#ffffff"
+            android:gravity="start|top"
+            android:textColor="#ffffffff"
+            android:textSize="13dp"
+            android:layout_below="@id/explainText"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/LocateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.08"
+            android:lineSpacingExtra="4sp"
+            android:text="수리점 선택"
+            android:gravity="start|top"
+            android:textColor="#99ffffff"
+            android:textSize="13dp"
+            android:layout_below="@id/explainTextView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="21.5dp"/>
+
+        <TextView
+            android:id="@+id/LocateChoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosanscjkkrlight"
+            android:letterSpacing="0.08"
+            android:lineSpacingExtra="6sp"
+            android:text="수리점을 선택해주세요!"
+            android:gravity="start|top"
+            android:textColor="#ffffffff"
+            android:textSize="13dp"
+            android:layout_below="@id/LocateText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="9.8dp"/>
+
+        <TextView
+            android:id="@+id/text_requirement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosanscjkkrregular"
+            android:letterSpacing="0.08"
+            android:lineSpacingExtra="4sp"
+            android:text="추가 요구사항"
+            android:gravity="start|top"
+            android:textColor="#99ffffff"
+            android:textSize="13dp"
+            android:layout_below="@id/LocateChoice"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="21.3dp"/>
+
+
+
+        <ImageView
+            android:id="@+id/btn_addrequirement"
+            android:layout_width="190.8dp"
+            android:layout_height="26dp"
+            android:src="@mipmap/btn_addrequirement"
+            android:layout_below="@id/text_requirement"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            style="@style/CheckBox"
+            android:theme="@style/CheckBox"
+            android:textSize="13dp"
+            android:layout_below="@id/btn_addrequirement"
+            android:text="컴퓨터청소"
+            android:textColor="#ffffff"
+            android:id="@+id/radioBtnComputerClean"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <CheckBox
+            style="@style/CheckBox"
+            android:theme="@style/CheckBox"
+            android:id="@+id/radioBtnFormat"
+            android:layout_below="@+id/radioBtnComputerClean"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="포멧"
+            android:textColor="#ffffff"
+            android:textSize="13dp"/>
+
+        <CheckBox
+            style="@style/CheckBox"
+            android:theme="@style/CheckBox"
+            android:id="@+id/radioBtnWindow"
+            android:layout_below="@+id/radioBtnFormat"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="윈도우 정품 설치"
+            android:textSize="13dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <CheckBox
+            style="@style/CheckBox"
+            android:theme="@style/CheckBox"
+            android:id="@+id/radioBtnService"
+            android:layout_below="@+id/radioBtnWindow"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="출장 서비스"
+            android:textSize="13dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/btn_complete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/radioBtnWindow"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-30dp"
+            android:layout_marginEnd="30dp"
+            android:src="@mipmap/btn_complete" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="부팅이 안돼요"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:background="@drawable/arrow_back"
+        android:id="@+id/profile_Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/textEstimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="견적서 번호"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/textTitle"
+        android:textSize="18dp"
+        android:layout_marginTop="7dp"/>
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019.10.24"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/textEstimate"
+        android:layout_marginTop="20dp"
+        android:textSize="19dp"/>
+
+    <TextView
+        android:id="@+id/textState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수리중"
+        android:textSize="17dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@+id/textTime"
+        android:layout_marginRight="10dp"/>
+
+    <!--
+
+    <TextView
+        android:id="@+id/textGun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@+id/textTime"
+        android:text="건"
+        android:textSize="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/textCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="30dp"
+        android:layout_toLeftOf="@id/textGun"
+        android:layout_below="@id/textClass"
+        android:layout_alignBaseline="@id/textTime"
+        android:layout_marginRight="10dp"
+        />
+
+
+    -->
+
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffffff"
+        android:elevation="4dp"
+        android:id="@+id/Toolbar">
+
+        <TextView
+            android:id="@+id/toolbarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="자가진단"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/notosanscjkkrmedium"
+            android:letterSpacing="0.02"
+            android:gravity="center_horizontal|top"
+            android:textSize="25dp"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/text_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanscjkkrregular"
+        android:text="증상을 한 번 알아볼까요?"
+        android:gravity="start|top"
+        android:textColor="#ff32394a"
+        android:textSize="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자가진단"
+        android:fontFamily="@font/robotothin"
+        android:textStyle="normal"
+        android:gravity="start|top"
+        android:textColor="#ff32394a"
+        android:textSize="40dp"
+        android:layout_below="@id/text_subtitle"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imgview_midicon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@mipmap/imgview_midicon"
+        android:layout_below="@id/text_title"
+        android:layout_marginTop="101.5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/text_insetkeyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanscjkkrbold"
+        android:text="터치해서 키워드를 선택하세요"
+        android:gravity="center_horizontal|top"
+        android:textColor="#ff32394a"
+        android:textSize="20dp"
+        android:layout_below="@id/imgview_midicon"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imgview_line"
+        android:layout_width="270dp"
+        android:layout_height="0.8dp"
+        android:background="#ff32394a"
+        android:layout_below="@id/text_insetkeyword"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/btn_search"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@mipmap/btn_search"
+        android:layout_above="@id/imgview_line"
+        android:layout_toEndOf="@id/text_insetkeyword"
+        android:layout_marginStart="24.8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/text_ex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EX ) 부팅, 모니터, 인터넷 ..."
+        android:fontFamily="@font/notosanscjkkrregular"
+        android:gravity="center"
+        android:textColor="#ff32394a"
+        android:textSize="12dp"
+        android:layout_alignTop="@id/imgview_line"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/btn_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanscjkkrthin"
+        android:text="SKIP"
+        android:gravity="center_horizontal|top"
+        android:textColor="#ff32394a"
+        android:textSize="22dp"
+        android:layout_below="@id/text_ex"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
+

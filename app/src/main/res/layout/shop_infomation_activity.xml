@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="500dp"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear">
+            <TextView
+                android:text="수리점 정보"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:background="#384051"
+                android:layout_width="match_parent"
+                android:layout_height="53dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgShopInfo"
+            android:layout_centerInParent="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/repairshop_image"
+            android:layout_below="@id/linear"/>
+
+        <TextView
+            android:id="@+id/textBest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="베스트 샵"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/imgShopInfo"/>
+
+        <TextView
+            android:id="@+id/textShopName"
+            android:text="텍스트뷰 수리점 이름"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/textBest" />
+
+        <TextView
+            android:id="@+id/textShopLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="텍스트뷰 수리점 위치"
+            android:layout_below="@id/textShopName"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"/>
+
+        <!--
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textShopLocation"
+            android:id="@+id/Layout">
+
+            <TextView
+                android:id="@+id/textRepairCount"
+                android:text="수리건수"
+                android:textSize="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="45dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textCustomerRepute"
+                android:text="고객 만족도"
+                android:textSize="17dp"
+                android:layout_toRightOf="@id/textRepairCount"
+                android:layout_marginLeft="19dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textCustomerReview"
+                android:text="후기"
+                android:textSize="17dp"
+                android:layout_toRightOf="@id/textCustomerRepute"
+                android:layout_marginLeft="50dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textCount"
+                android:text="198"
+                android:textSize="30dp"
+                android:layout_below="@id/textRepairCount"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="3dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textGun"
+                android:text="건"
+                android:layout_toRightOf="@id/textCount"
+                android:layout_marginTop="40dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textRepute"
+                android:text="0"
+                android:textSize="30dp"
+                android:layout_marginTop="24dp"
+                android:layout_toRightOf="@id/textGun"
+                android:layout_marginLeft="60dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textJum"
+                android:text="점"
+                android:gravity="center"
+                android:layout_toRightOf="@id/textRepute"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textReview"
+                android:text="0"
+                android:textSize="30dp"
+                android:layout_toRightOf="@id/textJum"
+                android:layout_below="@id/textCustomerReview"
+                android:layout_marginLeft="85dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textGea"
+                android:text="개"
+                android:gravity="center"
+                android:layout_toRightOf="@id/textReview"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="3dp"/>
+
+        </RelativeLayout>
+
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear10"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/textShopLocation">
+
+            <TextView
+                android:id="@+id/textRepairCount"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="수리건수"
+                android:textSize="17dp"
+                android:layout_marginLeft="0dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/textCustomerRepute"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="고객 만족도"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/textCustomerReview"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="후기"
+                android:textSize="17dp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear20"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/linear10">
+
+            <TextView
+                android:id="@+id/textCount"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="192건"
+                android:textSize="20dp"
+                android:layout_marginLeft="0dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/textRepute"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="192점"
+                android:textSize="20dp"
+                android:layout_marginLeft="0dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/textReview"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="192개"
+                android:textSize="20dp"
+                android:layout_marginLeft="0dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textShopTime"
+            android:text="영업시간"
+            android:textSize="25dp"
+            android:layout_below="@id/linear20"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textWeekday"
+            android:text="평일"
+            android:textSize="17dp"
+            android:layout_below="@id/textShopTime"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textWeekdayTime"
+            android:text=" 9:00~18:00"
+            android:textSize="17dp"
+            android:layout_toRightOf="@id/textWeekday"
+            android:layout_below="@id/textShopTime"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textSaturday"
+            android:text="토요일"
+            android:textSize="17dp"
+            android:layout_below="@id/textWeekday"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textSaturdayTime"
+            android:text=" 9:00~18:00"
+            android:textSize="17dp"
+            android:layout_toRightOf="@id/textSaturday"
+            android:layout_below="@id/textWeekdayTime"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textSunday"
+            android:text="일요일 및 공휴일"
+            android:textSize="17dp"
+            android:layout_below="@id/textSaturday"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textSundayTime"
+            android:text=" 9:00~18:00"
+            android:textSize="17dp"
+            android:layout_toRightOf="@id/textSunday"
+            android:layout_below="@id/textSaturdayTime"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <View
+            android:background="#66bdbdbd"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <!--
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/LayoutNaverMap"
+            android:layout_below="@id/textLocation"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp">
+
+            <com.naver.maps.map.MapView
+                android:id="@+id/map_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </com.naver.maps.map.MapView>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textPersonalDay"
+            android:text="휴무일"
+            android:textSize="17dp"
+            android:layout_below="@id/textSunday"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textPersonalDayWhen"
+            android:text="일요일"
+            android:textSize="17dp"
+            android:layout_toRightOf="@id/textPersonalDay"
+            android:layout_below="@id/textSundayTime"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"/>
+        -->
+
+
+        <LinearLayout
+            android:id="@+id/linear30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/textSunday"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btnFinish"
+                android:layout_marginTop="10dp"
+                android:text="확인"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btnShopInfomation"
+                android:layout_marginTop="10dp"
+                android:text="수리점 상세"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
